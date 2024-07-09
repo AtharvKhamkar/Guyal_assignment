@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.login-box{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box h2{
+    margin-bottom: 1rem;
+}
+
+.login-box p{
+    margin-bottom: 1.5rem;
+    color:#666
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input{
+    padding: 0.75rem;
+    margin-bottom:1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-box button{
+    padding:0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-box button:hover{
+    background-color: #0056b3;
+}
+
+.login-options{
+    margin-top: 1.5rem;
+}
+
+.login-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-buttons button{
+    padding: 0.5rem 1rem;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+
+.google-login{
+    background-color: #db4437;
+    color: #fff;
+}
+
+.google-login:hover{
+    background-color: #c23321;
+}
+
+.facebook-login{
+    background-color: #4267b2;
+    color: #fff;
+}
+
+.facebook-login:hover{
+    background-color: #365899;
+}
+
+.apple-login{
+    background-color: #000;
+    color: #fff;
+}
+
+.apple-login:hover{
+    background-color: #333;
+}
+
+/* CSS properties for responsive screen */
+@media(max-width:768px){
+    .login-box{
+        padding:1.5rem;
+    }
+
+    .login-buttons{
+        flex-direction: column;
+    }
+
+    .login-buttons button{
+        padding:0.5rem;
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    .login-box{
+        padding: 1rem;
+    }
+
+    .login-box h2{
+        font-size: 1.5rem;
+    }
+
+    .login-box input{
+        padding:0.5rem;
+        font-size:0.875rem;
+    }
+
+    .login-box button{
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .login-buttons buttons{
+        padding:0.54rem;
+        font-size: 0.875rem;
+    }
+}
