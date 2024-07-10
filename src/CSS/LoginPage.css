@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
@@ -8,7 +9,8 @@ body {
     background-color: #f0f2f5;
 }
 
-.login-container{
+/* Login Container */
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,131 +18,148 @@ body {
     padding: 1rem;
 }
 
-.login-box{
+/* Login Box */
+.login-box {
     background-color: #fff;
     padding: 5rem 4rem 3rem 5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: start;
     max-width: 585px;
-    max-height: 690px;
     width: 100%;
-
 }
 
-.login-box h2{
+.login-box h2 {
     margin-bottom: 0.75rem;
     font-size: 30px;
     color: #292929;
 }
 
-.login-box p{
+.login-box p {
     margin: 0.75rem 0 3rem 0;
-    color:#545454;
+    color: #545454;
     font-size: 18px;
-
 }
 
-.login-box form{
+/* Form Styles */
+.login-box form {
     display: flex;
     flex-direction: column;
 }
 
-.login-box input{
-    padding: 0.75rem;
-    margin-bottom:1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.login-box input {
+    padding: 1.5rem 2.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
     font-size: 1rem;
 }
 
-.login-box button{
-    padding:0.75rem;
-    background-color: #007bff;
+.login-box input:focus {
+    border: 1px solid #8AC0FF;
+}
+
+.login-box button {
+    padding: 1.25rem 8rem;
+    margin: 0 auto;
+    max-width: 312px;
+    background-color: #0366FF;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.login-box button:hover{
+.login-box button:hover {
     background-color: #0056b3;
 }
 
-.login-options{
-    margin-top: 1.5rem;
+/* Additional Options */
+.login-options {
+    margin-top: 2rem;
 }
 
-.login-buttons{
+.login-options-div {
     display: flex;
-    justify-content: space-around;
+    margin-bottom: 2.25rem;
 }
 
-.login-buttons button{
+.login-options-span {
+    font-size: 16px;
+    color: #4F4F4F;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.login-buttons button {
     padding: 0.5rem 1rem;
-    border:none;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition:background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.login-options button{
-    height: 4rem;
-    width: 7rem;
-    background-color: #f0f2f5;
+.login-options button {
+    height: 4.25rem;
+    width: 8.25rem;
+    background-color: #F7F7F7;
 }
 
-.login-options button:hover{
+.login-options button:hover {
     background-color: #bebcbc;
 }
 
-.logo-img{
-    height: 1.5rem;
-    width: 1.5rem;
+.logo-img {
+    height: 2rem;
+    width: 2rem;
 }
 
-
-/* CSS properties for responsive screen */
-@media(max-width:768px){
-    .login-box{
-        padding:1.5rem;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 5rem 4rem 3rem 5rem;
     }
 
-    .login-buttons{
+    .login-buttons {
         flex-direction: column;
+        align-items: center;
     }
 
-    .login-buttons button{
-        padding:0.5rem;
+    .login-buttons button {
+        padding: 0.5rem;
+        margin: 1rem 1rem;
         width: 100%;
     }
 }
 
-@media(max-width:480px){
-    .login-box{
+@media (max-width: 480px) {
+    .login-box {
         padding: 1rem;
     }
 
-    .login-box h2{
+    .login-box h2 {
         font-size: 1.5rem;
     }
 
-    .login-box input{
-        padding:0.5rem;
-        font-size:0.875rem;
-    }
-
-    .login-box button{
+    .login-box input {
         padding: 0.5rem;
         font-size: 0.875rem;
     }
 
-    .login-buttons buttons{
-        padding:0.54rem;
+    .login-box button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .login-buttons button {
+        padding: 0.54rem;
         font-size: 0.875rem;
     }
 }

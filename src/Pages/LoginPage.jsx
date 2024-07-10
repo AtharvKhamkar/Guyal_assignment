@@ -33,22 +33,25 @@ const LoginPage = () => {
           {errors.password && (
             <span className='error'>This field is required</span>
           )}
+          <div className='login-options'>
+            <div className='login-options-div'>
+              <span className='login-options-span'>Or continue with</span>
+              <hr className='login-options-horizontal-line' />
+            </div>
+            <div className='login-buttons'>
+              <button className='google-login'>
+                <img className='logo-img' src={google_logo} alt='google-logo' />
+              </button>
+              <button className='facebook-login'>
+                <img className='logo-img' src={meta_logo} alt='meta-logo' />
+              </button>
+              <button className='apple-login'>
+                <img className='logo-img' src={apple_logo} alt='apple-logo' />
+              </button>
+            </div>
+          </div>
           <button type='submit'>Log in</button>
         </form>
-        <div className='login-options'>
-          <p>Or continue with</p>
-          <div className='login-buttons'>
-            <button className='google-login'>
-              <img className='logo-img' src={google_logo} alt='google-logo' />
-            </button>
-            <button className='facebook-login'>
-              <img className='logo-img' src={meta_logo} alt='meta-logo' />
-            </button>
-            <button className='apple-login'>
-              <img className='logo-img' src={apple_logo} alt='apple-logo' />
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
