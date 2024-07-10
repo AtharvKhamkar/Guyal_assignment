@@ -18,21 +18,29 @@ body {
 
 .login-box{
     background-color: #fff;
-    padding: 2rem;
+    padding: 5rem 4rem 3rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
+    text-align: start;
+    max-width: 585px;
+    max-height: 690px;
     width: 100%;
+
 }
 
 .login-box h2{
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 30px;
+    color: #292929;
 }
 
 .login-box p{
-    margin-bottom: 1.5rem;
-    color:#666
+    margin: 0.75rem 0 3rem 0;
+    color:#545454;
+    font-size: 18px;
+
 }
 
 .login-box form{
@@ -80,32 +88,21 @@ body {
     transition:background-color 0.3s ease;
 }
 
-.google-login{
-    background-color: #db4437;
-    color: #fff;
+.login-options button{
+    height: 4rem;
+    width: 7rem;
+    background-color: #f0f2f5;
 }
 
-.google-login:hover{
-    background-color: #c23321;
+.login-options button:hover{
+    background-color: #bebcbc;
 }
 
-.facebook-login{
-    background-color: #4267b2;
-    color: #fff;
+.logo-img{
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-.facebook-login:hover{
-    background-color: #365899;
-}
-
-.apple-login{
-    background-color: #000;
-    color: #fff;
-}
-
-.apple-login:hover{
-    background-color: #333;
-}
 
 /* CSS properties for responsive screen */
 @media(max-width:768px){

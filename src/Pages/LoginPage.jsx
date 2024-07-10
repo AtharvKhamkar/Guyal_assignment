@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import '../CSS/LoginPage.css';
+import { apple_logo, google_logo, meta_logo } from '../assets';
 
 const LoginPage = () => {
   const {
@@ -37,9 +38,15 @@ const LoginPage = () => {
         <div className='login-options'>
           <p>Or continue with</p>
           <div className='login-buttons'>
-            <button className='google-login'>Google</button>
-            <button className='facebook-login'>Meta</button>
-            <button className='apple-login'>Apple</button>
+            <button className='google-login'>
+              <img className='logo-img' src={google_logo} alt='google-logo' />
+            </button>
+            <button className='facebook-login'>
+              <img className='logo-img' src={meta_logo} alt='meta-logo' />
+            </button>
+            <button className='apple-login'>
+              <img className='logo-img' src={apple_logo} alt='apple-logo' />
+            </button>
           </div>
         </div>
       </div>
